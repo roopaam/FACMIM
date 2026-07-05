@@ -12,6 +12,12 @@ from src.selectors.fair_cfs import (
     FairCFSSelector,
     FairCFSStyleSelector,
 )
+from src.selectors.fair_lasso import (
+    FairLasso,
+    FairLassoBaselineSelector,
+    FairLassoSelector,
+    FairLassoStyleSelector,
+)
 from src.selectors.fair_mrmr import (
     FairMRMR,
     FairMRMRBaselineSelector,
@@ -34,6 +40,10 @@ __all__ = [
     "FairCFSSelector",
     "FairCFSBaselineSelector",
     "FairCFS",
+    "FairLassoStyleSelector",
+    "FairLassoSelector",
+    "FairLassoBaselineSelector",
+    "FairLasso",
     "FACMIMBasicSelector",
     "BasicFACMIMSelector",
     "FACMIMSubsetAwareSelector",

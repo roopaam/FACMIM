@@ -23,6 +23,7 @@ from sklearn.preprocessing import OneHotEncoder
 
 from src.evaluation.metrics import compute_all_metrics
 from src.selectors.cmim import CMIMSelector
+from src.selectors.fair_lasso import FairLassoStyleSelector
 from src.selectors.fair_cfs import FairCFSStyleSelector
 from src.selectors.fair_mrmr import FairMRMRSelector
 from src.selectors.mrmr import MRMRSelector
@@ -260,6 +261,13 @@ def make_selectors(k: int, lambdas: list[float], random_state: int = 42) -> list
             (
                 f"FairCFS_k{k}_lambda{lam}",
                 FairCFSStyleSelector(k=k, fairness_penalty=lam, random_state=random_state),
+            )
+        )
+
+        selectors.append(
+            (
+                f"FairLasso_k{k}_lambda{lam}",
+                FairLassoStyleSelector(k=k, fairness_penalty=lam, random_state=random_state),
             )
         )
 

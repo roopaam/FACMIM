@@ -6,6 +6,7 @@ from src.selectors.fa_cmim_subset import (
     SubsetAwareConstrainedFACMIMSelector,
     SubsetAwareFACMIMSelector,
 )
+from src.selectors.proxy_rank import MarginalProxyRankSelector, ProxyRankSelector
 
 __all__ = [
     "CMIMSelector",
@@ -15,4 +16,6 @@ __all__ = [
     "SubsetAwareFACMIMSelector",
     "SubsetAwareConstrainedFACMIMSelector",
     "FACMIMSubsetSelector",
+    "ProxyRankSelector",
+    "MarginalProxyRankSelector",
 ]

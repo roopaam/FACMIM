@@ -1,0 +1,19 @@
+{
+  "sample_size": 5000,
+  "k": 8,
+  "lambdas": [
+    0.0,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "models": [
+    "logistic_regression",
+    "random_forest",
+    "gradient_boosting"
+  ],
+  "random_state": 42,
+  "synthetic_smoke": false,
+  "rows": 78,
+  "output_path": "results/adult/final/adult_pilot_results.csv"
+}

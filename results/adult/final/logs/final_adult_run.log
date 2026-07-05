@@ -1,0 +1,242 @@
+Loading Adult Income dataset from UCI.
+
+Fitting selector: CMIM_k8
+Selected features: ['relationship', 'occupation', 'education', 'age', 'hours-per-week', 'native-country', 'workclass', 'marital-status']
+  Training model: logistic_regression
+  Training model: random_forest
+  Training model: gradient_boosting
+
+Fitting selector: mRMR_k8
+Selected features: ['relationship', 'education-num', 'capital-gain', 'hours-per-week', 'age', 'capital-loss', 'occupation', 'fnlwgt']
+  Training model: logistic_regression
+  Training model: random_forest
+  Training model: gradient_boosting
+
+Fitting selector: ProxyRank_k8_lambda0.0
+Selected features: ['relationship', 'marital-status', 'occupation', 'education', 'age', 'education-num', 'hours-per-week', 'workclass']
+  Training model: logistic_regression
+  Training model: random_forest
+  Training model: gradient_boosting
+
+Fitting selector: FairmRMR_k8_lambda0.0
+Selected features: ['relationship', 'education-num', 'capital-gain', 'hours-per-week', 'age', 'capital-loss', 'occupation', 'fnlwgt']
+  Training model: logistic_regression
+  Training model: random_forest
+  Training model: gradient_boosting
+
+Fitting selector: FairCFS_k8_lambda0.0
+Selected features: ['relationship', 'occupation', 'marital-status', 'education', 'age', 'hours-per-week', 'workclass', 'capital-gain']
+  Training model: logistic_regression
+  Training model: random_forest
+  Training model: gradient_boosting
+
+Fitting selector: FairLasso_k8_lambda0.0
+Selected features: ['native-country', 'occupation', 'marital-status', 'education', 'age', 'hours-per-week', 'relationship', 'education-num']
+  Training model: logistic_regression
+  Training model: random_forest
+  Training model: gradient_boosting
+
+Fitting selector: BasicFACMIM_k8_lambda0.0
+Selected features: ['relationship', 'occupation', 'education', 'age', 'hours-per-week', 'native-country', 'workclass', 'marital-status']
+  Training model: logistic_regression
+  Training model: random_forest
+  Training model: gradient_boosting
+
+Fitting selector: SubsetFACMIM_k8_lambda0.0
+Selected features: ['relationship', 'occupation', 'education', 'age', 'hours-per-week', 'native-country', 'workclass', 'marital-status']
+  Training model: logistic_regression
+  Training model: random_forest
+  Training model: gradient_boosting
+
+Fitting selector: ProxyRank_k8_lambda0.5
+Selected features: ['education', 'age', 'education-num', 'marital-status', 'hours-per-week', 'occupation', 'native-country', 'workclass']
+  Training model: logistic_regression
+  Training model: random_forest
+  Training model: gradient_boosting
+
+Fitting selector: FairmRMR_k8_lambda0.5
+Selected features: ['education', 'marital-status', 'capital-gain', 'hours-per-week', 'capital-loss', 'age', 'fnlwgt', 'workclass']
+  Training model: logistic_regression
+  Training model: random_forest
+  Training model: gradient_boosting
+
+Fitting selector: FairCFS_k8_lambda0.5
+Selected features: ['education', 'marital-status', 'age', 'hours-per-week', 'occupation', 'capital-gain', 'relationship', 'capital-loss']
+  Training model: logistic_regression
+  Training model: random_forest
+  Training model: gradient_boosting
+
+Fitting selector: FairLasso_k8_lambda0.5
+Selected features: ['native-country', 'occupation', 'education', 'marital-status', 'age', 'hours-per-week', 'education-num', 'workclass']
+  Training model: logistic_regression
+  Training model: random_forest
+  Training model: gradient_boosting
+
+Fitting selector: BasicFACMIM_k8_lambda0.5
+Selected features: ['education', 'marital-status', 'age', 'native-country', 'hours-per-week', 'workclass', 'fnlwgt', 'capital-gain']
+  Training model: logistic_regression
+  Training model: random_forest
+  Training model: gradient_boosting
+
+Fitting selector: SubsetFACMIM_k8_lambda0.5
+Selected features: ['education', 'marital-status', 'hours-per-week', 'education-num', 'capital-gain', 'capital-loss', 'native-country', 'age']
+  Training model: logistic_regression
+  Training model: random_forest
+  Training model: gradient_boosting
+
+Fitting selector: ProxyRank_k8_lambda1.0
+Selected features: ['education', 'age', 'education-num', 'hours-per-week', 'native-country', 'workclass', 'fnlwgt', 'capital-gain']
+  Training model: logistic_regression
+  Training model: random_forest
+  Training model: gradient_boosting
+
+Fitting selector: FairmRMR_k8_lambda1.0
+Selected features: ['education', 'age', 'capital-gain', 'capital-loss', 'fnlwgt', 'hours-per-week', 'workclass', 'native-country']
+  Training model: logistic_regression
+  Training model: random_forest
+  Training model: gradient_boosting
+
+Fitting selector: FairCFS_k8_lambda1.0
+Selected features: ['education', 'age', 'marital-status', 'hours-per-week', 'occupation', 'capital-gain', 'capital-loss', 'education-num']
+  Training model: logistic_regression
+  Training model: random_forest
+  Training model: gradient_boosting
+
+Fitting selector: FairLasso_k8_lambda1.0
+Selected features: ['native-country', 'occupation', 'education', 'marital-status', 'age', 'hours-per-week', 'education-num', 'workclass']
+  Training model: logistic_regression
+  Training model: random_forest
+  Training model: gradient_boosting
+
+Fitting selector: BasicFACMIM_k8_lambda1.0
+Selected features: ['education', 'age', 'native-country', 'fnlwgt', 'capital-gain', 'capital-loss', 'workclass', 'education-num']
+  Training model: logistic_regression
+  Training model: random_forest
+  Training model: gradient_boosting
+
+Fitting selector: SubsetFACMIM_k8_lambda1.0
+Selected features: ['education', 'age', 'education-num', 'capital-gain', 'capital-loss', 'native-country', 'workclass', 'hours-per-week']
+  Training model: logistic_regression
+  Training model: random_forest
+  Training model: gradient_boosting
+
+Fitting selector: ProxyRank_k8_lambda2.0
+Selected features: ['education', 'education-num', 'age', 'fnlwgt', 'capital-gain', 'capital-loss', 'native-country', 'workclass']
+  Training model: logistic_regression
+  Training model: random_forest
+  Training model: gradient_boosting
+
+Fitting selector: FairmRMR_k8_lambda2.0
+Selected features: ['education', 'age', 'capital-gain', 'capital-loss', 'fnlwgt', 'workclass', 'native-country', 'hours-per-week']
+  Training model: logistic_regression
+  Training model: random_forest
+  Training model: gradient_boosting
+
+Fitting selector: FairCFS_k8_lambda2.0
+Selected features: ['education', 'age', 'education-num', 'capital-gain', 'hours-per-week', 'fnlwgt', 'native-country', 'marital-status']
+  Training model: logistic_regression
+  Training model: random_forest
+  Training model: gradient_boosting
+
+Fitting selector: FairLasso_k8_lambda2.0
+Selected features: ['native-country', 'occupation', 'education', 'marital-status', 'age', 'hours-per-week', 'education-num', 'workclass']
+  Training model: logistic_regression
+  Training model: random_forest
+  Training model: gradient_boosting
+
+Fitting selector: BasicFACMIM_k8_lambda2.0
+Selected features: ['education', 'age', 'native-country', 'fnlwgt', 'capital-gain', 'capital-loss', 'education-num', 'workclass']
+  Training model: logistic_regression
+  Training model: random_forest
+  Training model: gradient_boosting
+
+Fitting selector: SubsetFACMIM_k8_lambda2.0
+Selected features: ['education', 'age', 'education-num', 'capital-gain', 'capital-loss', 'native-country', 'workclass', 'hours-per-week']
+  Training model: logistic_regression
+  Training model: random_forest
+  Training model: gradient_boosting
+
+Saved results to: results/adult/final/adult_pilot_results.csv
+Saved metadata to: results/adult/final/adult_pilot_metadata.json
+Saved diagnostics to: results/adult/final/diagnostics
+
+Summary:
+                 selector               model  accuracy  balanced_accuracy       f1    auroc      dpd      dpr  equal_opportunity_difference  equalized_odds_difference  mean_selected_mi_sensitive  joint_subset_mi_sensitive  sensitive_attacker_balanced_accuracy                                                                                  selected_features
+                  CMIM_k8 logistic_regression  0.784667           0.814017 0.672081 0.891679 0.335439 0.344574                      0.079984                   0.259035                    0.071565                   0.592534                              0.859129       relationship|occupation|education|age|hours-per-week|native-country|workclass|marital-status
+                  CMIM_k8       random_forest  0.747333           0.791659 0.638013 0.881314 0.433027 0.259123                      0.205149                   0.366045                    0.071565                   0.592534                              0.859129       relationship|occupation|education|age|hours-per-week|native-country|workclass|marital-status
+                  CMIM_k8   gradient_boosting  0.842667           0.764625 0.660920 0.898274 0.222742 0.212670                      0.282029                   0.282029                    0.071565                   0.592534                              0.859129       relationship|occupation|education|age|hours-per-week|native-country|workclass|marital-status
+                  mRMR_k8 logistic_regression  0.780667           0.806102 0.663943 0.896570 0.369286 0.288005                      0.138191                   0.293302                    0.054882                   0.586793                              0.866026          relationship|education-num|capital-gain|hours-per-week|age|capital-loss|occupation|fnlwgt
+                  mRMR_k8       random_forest  0.792000           0.819797 0.680328 0.911392 0.393853 0.249172                      0.198840                   0.305689                    0.054882                   0.586793                              0.866026          relationship|education-num|capital-gain|hours-per-week|age|capital-loss|occupation|fnlwgt
+                  mRMR_k8   gradient_boosting  0.861333           0.784100 0.695906 0.925236 0.177327 0.318797                      0.037295                   0.084155                    0.054882                   0.586793                              0.866026          relationship|education-num|capital-gain|hours-per-week|age|capital-loss|occupation|fnlwgt
+   ProxyRank_k8_lambda0.0 logistic_regression  0.778667           0.808256 0.664646 0.889871 0.337294 0.345971                      0.073675                   0.265213                    0.070617                   0.586927                              0.862578        relationship|marital-status|occupation|education|age|education-num|hours-per-week|workclass
+   ProxyRank_k8_lambda0.0       random_forest  0.769333           0.801139 0.654691 0.884770 0.394937 0.271656                      0.186222                   0.318025                    0.070617                   0.586927                              0.862578        relationship|marital-status|occupation|education|age|education-num|hours-per-week|workclass
+   ProxyRank_k8_lambda0.0   gradient_boosting  0.838667           0.768062 0.662011 0.894160 0.224046 0.244772                      0.226977                   0.226977                    0.070617                   0.586927                              0.862578        relationship|marital-status|occupation|education|age|education-num|hours-per-week|workclass
+    FairmRMR_k8_lambda0.0 logistic_regression  0.780667           0.806102 0.663943 0.896570 0.369286 0.288005                      0.138191                   0.293302                    0.054882                   0.586793                              0.866026          relationship|education-num|capital-gain|hours-per-week|age|capital-loss|occupation|fnlwgt
+    FairmRMR_k8_lambda0.0       random_forest  0.792000           0.819797 0.680328 0.911392 0.393853 0.249172                      0.198840                   0.305689                    0.054882                   0.586793                              0.866026          relationship|education-num|capital-gain|hours-per-week|age|capital-loss|occupation|fnlwgt
+    FairmRMR_k8_lambda0.0   gradient_boosting  0.861333           0.784100 0.695906 0.925236 0.177327 0.318797                      0.037295                   0.084155                    0.054882                   0.586793                              0.866026          relationship|education-num|capital-gain|hours-per-week|age|capital-loss|occupation|fnlwgt
+     FairCFS_k8_lambda0.0 logistic_regression  0.795333           0.814168 0.677859 0.907430 0.316233 0.347007                      0.074031                   0.236220                    0.069982                   0.586927                              0.860769         relationship|occupation|marital-status|education|age|hours-per-week|workclass|capital-gain
+     FairCFS_k8_lambda0.0       random_forest  0.764667           0.808495 0.658277 0.903765 0.422332 0.261282                      0.166226                   0.352744                    0.069982                   0.586927                              0.860769         relationship|occupation|marital-status|education|age|hours-per-week|workclass|capital-gain
+     FairCFS_k8_lambda0.0   gradient_boosting  0.858000           0.776631 0.685377 0.921252 0.179622 0.299407                      0.095502                   0.095502                    0.069982                   0.586927                              0.860769         relationship|occupation|marital-status|education|age|hours-per-week|workclass|capital-gain
+   FairLasso_k8_lambda0.0 logistic_regression  0.784000           0.812698 0.670732 0.889109 0.331400 0.349971                      0.057546                   0.259035                    0.071152                   0.583030                              0.862578   native-country|occupation|marital-status|education|age|hours-per-week|relationship|education-num
+   FairLasso_k8_lambda0.0       random_forest  0.764667           0.800636 0.652217 0.882756 0.392422 0.286633                      0.157118                   0.320868                    0.071152                   0.583030                              0.862578   native-country|occupation|marital-status|education|age|hours-per-week|relationship|education-num
+   FairLasso_k8_lambda0.0   gradient_boosting  0.834667           0.754907 0.644699 0.893361 0.200250 0.277111                      0.131271                   0.131271                    0.071152                   0.583030                              0.862578   native-country|occupation|marital-status|education|age|hours-per-week|relationship|education-num
+ BasicFACMIM_k8_lambda0.0 logistic_regression  0.784667           0.814017 0.672081 0.891679 0.335439 0.344574                      0.079984                   0.259035                    0.071565                   0.592534                              0.859129       relationship|occupation|education|age|hours-per-week|native-country|workclass|marital-status
+ BasicFACMIM_k8_lambda0.0       random_forest  0.747333           0.791659 0.638013 0.881314 0.433027 0.259123                      0.205149                   0.366045                    0.071565                   0.592534                              0.859129       relationship|occupation|education|age|hours-per-week|native-country|workclass|marital-status
+ BasicFACMIM_k8_lambda0.0   gradient_boosting  0.842667           0.764625 0.660920 0.898274 0.222742 0.212670                      0.282029                   0.282029                    0.071565                   0.592534                              0.859129       relationship|occupation|education|age|hours-per-week|native-country|workclass|marital-status
+SubsetFACMIM_k8_lambda0.0 logistic_regression  0.784667           0.814017 0.672081 0.891679 0.335439 0.344574                      0.079984                   0.259035                    0.071565                   0.592534                              0.859129       relationship|occupation|education|age|hours-per-week|native-country|workclass|marital-status
+SubsetFACMIM_k8_lambda0.0       random_forest  0.747333           0.791659 0.638013 0.881314 0.433027 0.259123                      0.205149                   0.366045                    0.071565                   0.592534                              0.859129       relationship|occupation|education|age|hours-per-week|native-country|workclass|marital-status
+SubsetFACMIM_k8_lambda0.0   gradient_boosting  0.842667           0.764625 0.660920 0.898274 0.222742 0.212670                      0.282029                   0.282029                    0.071565                   0.592534                              0.859129       relationship|occupation|education|age|hours-per-week|native-country|workclass|marital-status
+   ProxyRank_k8_lambda0.5 logistic_regression  0.784000           0.805712 0.665289 0.888168 0.352367 0.303477                      0.167294                   0.266660                    0.038235                   0.550579                              0.807744      education|age|education-num|marital-status|hours-per-week|occupation|native-country|workclass
+   ProxyRank_k8_lambda0.5       random_forest  0.773333           0.808181 0.662028 0.890313 0.349954 0.340272                      0.105576                   0.274716                    0.038235                   0.550579                              0.807744      education|age|education-num|marital-status|hours-per-week|occupation|native-country|workclass
+   ProxyRank_k8_lambda0.5   gradient_boosting  0.843333           0.767691 0.664765 0.893944 0.218482 0.233052                      0.233642                   0.233642                    0.038235                   0.550579                              0.807744      education|age|education-num|marital-status|hours-per-week|occupation|native-country|workclass
+    FairmRMR_k8_lambda0.5 logistic_regression  0.796000           0.810248 0.675159 0.898978 0.302371 0.360056                      0.116109                   0.212431                    0.021982                   0.480345                              0.739853             education|marital-status|capital-gain|hours-per-week|capital-loss|age|fnlwgt|workclass
+    FairmRMR_k8_lambda0.5       random_forest  0.773333           0.819533 0.670543 0.904471 0.403007 0.286502                      0.127302                   0.331336                    0.021982                   0.480345                              0.739853             education|marital-status|capital-gain|hours-per-week|capital-loss|age|fnlwgt|workclass
+    FairmRMR_k8_lambda0.5   gradient_boosting  0.857333           0.773565 0.681548 0.919706 0.174710 0.305255                      0.105322                   0.105322                    0.021982                   0.480345                              0.739853             education|marital-status|capital-gain|hours-per-week|capital-loss|age|fnlwgt|workclass
+     FairCFS_k8_lambda0.5 logistic_regression  0.798000           0.816825 0.681388 0.908647 0.298983 0.373734                      0.038618                   0.220518                    0.068934                   0.574066                              0.862578      education|marital-status|age|hours-per-week|occupation|capital-gain|relationship|capital-loss
+     FairCFS_k8_lambda0.5       random_forest  0.771333           0.811209 0.663395 0.906577 0.423864 0.246957                      0.179200                   0.350856                    0.068934                   0.574066                              0.862578      education|marital-status|age|hours-per-week|occupation|capital-gain|relationship|capital-loss
+     FairCFS_k8_lambda0.5   gradient_boosting  0.865333           0.785030 0.700297 0.925178 0.161390 0.350614                      0.007581                   0.072743                    0.068934                   0.574066                              0.862578      education|marital-status|age|hours-per-week|occupation|capital-gain|relationship|capital-loss
+   FairLasso_k8_lambda0.5 logistic_regression  0.784000           0.805712 0.665289 0.888193 0.352367 0.303477                      0.167294                   0.266660                    0.038235                   0.550579                              0.807744      native-country|occupation|education|marital-status|age|hours-per-week|education-num|workclass
+   FairLasso_k8_lambda0.5       random_forest  0.776000           0.806472 0.661972 0.891124 0.362622 0.311288                      0.131525                   0.286149                    0.038235                   0.550579                              0.807744      native-country|occupation|education|marital-status|age|hours-per-week|education-num|workclass
+   FairLasso_k8_lambda0.5   gradient_boosting  0.843333           0.767691 0.664765 0.894000 0.218482 0.233052                      0.233642                   0.233642                    0.038235                   0.550579                              0.807744      native-country|occupation|education|marital-status|age|hours-per-week|education-num|workclass
+ BasicFACMIM_k8_lambda0.5 logistic_regression  0.776667           0.800806 0.657814 0.896182 0.335659 0.339069                      0.148011                   0.251892                    0.023564                   0.494754                              0.740362           education|marital-status|age|native-country|hours-per-week|workclass|fnlwgt|capital-gain
+ BasicFACMIM_k8_lambda0.5       random_forest  0.754000           0.803978 0.650237 0.895474 0.407259 0.299680                      0.156406                   0.337966                    0.023564                   0.494754                              0.740362           education|marital-status|age|native-country|hours-per-week|workclass|fnlwgt|capital-gain
+ BasicFACMIM_k8_lambda0.5   gradient_boosting  0.850000           0.765166 0.666667 0.912244 0.186828 0.274081                      0.150555                   0.150555                    0.023564                   0.494754                              0.740362           education|marital-status|age|native-country|hours-per-week|workclass|fnlwgt|capital-gain
+SubsetFACMIM_k8_lambda0.5 logistic_regression  0.779333           0.803463 0.661208 0.897240 0.339809 0.330899                      0.131882                   0.259035                    0.023014                   0.325891                              0.735274 education|marital-status|hours-per-week|education-num|capital-gain|capital-loss|native-country|age
+SubsetFACMIM_k8_lambda0.5       random_forest  0.784667           0.828862 0.683023 0.904497 0.362724 0.332273                      0.095044                   0.283286                    0.023014                   0.325891                              0.735274 education|marital-status|hours-per-week|education-num|capital-gain|capital-loss|native-country|age
+SubsetFACMIM_k8_lambda0.5   gradient_boosting  0.856000           0.785771 0.693182 0.919334 0.184745 0.330710                      0.017655                   0.096512                    0.023014                   0.325891                              0.735274 education|marital-status|hours-per-week|education-num|capital-gain|capital-loss|native-country|age
+   ProxyRank_k8_lambda1.0 logistic_regression  0.753333           0.745026 0.598698 0.826232 0.108475 0.726665                      0.080035                   0.080035                    0.010939                   0.383846                              0.631487            education|age|education-num|hours-per-week|native-country|workclass|fnlwgt|capital-gain
+   ProxyRank_k8_lambda1.0       random_forest  0.775333           0.753632 0.614857 0.851520 0.108161 0.704011                      0.019385                   0.019385                    0.010939                   0.383846                              0.631487            education|age|education-num|hours-per-week|native-country|workclass|fnlwgt|capital-gain
+   ProxyRank_k8_lambda1.0   gradient_boosting  0.820000           0.697067 0.557377 0.850359 0.077122 0.568624                      0.042231                   0.042231                    0.010939                   0.383846                              0.631487            education|age|education-num|hours-per-week|native-country|workclass|fnlwgt|capital-gain
+    FairmRMR_k8_lambda1.0 logistic_regression  0.761333           0.748632 0.604857 0.830734 0.104986 0.727358                      0.015875                   0.015875                    0.010304                   0.383846                              0.628208             education|age|capital-gain|capital-loss|fnlwgt|hours-per-week|workclass|native-country
+    FairmRMR_k8_lambda1.0       random_forest  0.782000           0.780797 0.643402 0.859686 0.137190 0.659366                      0.062837                   0.062837                    0.010304                   0.383846                              0.628208             education|age|capital-gain|capital-loss|fnlwgt|hours-per-week|workclass|native-country
+    FairmRMR_k8_lambda1.0   gradient_boosting  0.828000           0.698926 0.562712 0.867542 0.072761 0.556464                      0.074132                   0.074132                    0.010304                   0.383846                              0.628208             education|age|capital-gain|capital-loss|fnlwgt|hours-per-week|workclass|native-country
+     FairCFS_k8_lambda1.0 logistic_regression  0.792000           0.808445 0.671579 0.907245 0.313286 0.349132                      0.080696                   0.233839                    0.035604                   0.503366                              0.794291     education|age|marital-status|hours-per-week|occupation|capital-gain|capital-loss|education-num
+     FairCFS_k8_lambda1.0       random_forest  0.792000           0.830275 0.688000 0.913365 0.368516 0.307842                      0.120993                   0.284733                    0.035604                   0.503366                              0.794291     education|age|marital-status|hours-per-week|occupation|capital-gain|capital-loss|education-num
+     FairCFS_k8_lambda1.0   gradient_boosting  0.865333           0.797255 0.712251 0.925286 0.185837 0.324348                      0.055866                   0.085100                    0.035604                   0.503366                              0.794291     education|age|marital-status|hours-per-week|occupation|capital-gain|capital-loss|education-num
+   FairLasso_k8_lambda1.0 logistic_regression  0.784000           0.805712 0.665289 0.888193 0.352367 0.303477                      0.167294                   0.266660                    0.038235                   0.550579                              0.807744      native-country|occupation|education|marital-status|age|hours-per-week|education-num|workclass
+   FairLasso_k8_lambda1.0       random_forest  0.776000           0.806472 0.661972 0.891124 0.362622 0.311288                      0.131525                   0.286149                    0.038235                   0.550579                              0.807744      native-country|occupation|education|marital-status|age|hours-per-week|education-num|workclass
+   FairLasso_k8_lambda1.0   gradient_boosting  0.843333           0.767691 0.664765 0.894000 0.218482 0.233052                      0.233642                   0.233642                    0.038235                   0.550579                              0.807744      native-country|occupation|education|marital-status|age|hours-per-week|education-num|workclass
+ BasicFACMIM_k8_lambda1.0 logistic_regression  0.737333           0.720350 0.568928 0.811220 0.021134 0.941853                      0.086140                   0.086140                    0.006445                   0.259687                              0.581628              education|age|native-country|fnlwgt|capital-gain|capital-loss|workclass|education-num
+ BasicFACMIM_k8_lambda1.0       random_forest  0.783333           0.755492 0.619883 0.838965 0.079344 0.768562                      0.070367                   0.070367                    0.006445                   0.259687                              0.581628              education|age|native-country|fnlwgt|capital-gain|capital-loss|workclass|education-num
+ BasicFACMIM_k8_lambda1.0   gradient_boosting  0.830667           0.704203 0.572391 0.845851 0.070576 0.574873                      0.080798                   0.080798                    0.006445                   0.259687                              0.581628              education|age|native-country|fnlwgt|capital-gain|capital-loss|workclass|education-num
+SubsetFACMIM_k8_lambda1.0 logistic_regression  0.764667           0.744749 0.602029 0.827809 0.089379 0.756718                      0.006207                   0.006207                    0.010802                   0.251806                              0.631148      education|age|education-num|capital-gain|capital-loss|native-country|workclass|hours-per-week
+SubsetFACMIM_k8_lambda1.0       random_forest  0.781333           0.764633 0.628118 0.862166 0.118094 0.683632                      0.006055                   0.025413                    0.010802                   0.251806                              0.631148      education|age|education-num|capital-gain|capital-loss|native-country|workclass|hours-per-week
+SubsetFACMIM_k8_lambda1.0   gradient_boosting  0.832000           0.711208 0.584158 0.868510 0.076250 0.566355                      0.077999                   0.077999                    0.010802                   0.251806                              0.631148      education|age|education-num|capital-gain|capital-loss|native-country|workclass|hours-per-week
+   ProxyRank_k8_lambda2.0 logistic_regression  0.749333           0.730998 0.583149 0.804410 0.036859 0.897758                      0.076677                   0.076677                    0.006445                   0.259687                              0.579480              education|education-num|age|fnlwgt|capital-gain|capital-loss|native-country|workclass
+   ProxyRank_k8_lambda2.0       random_forest  0.794000           0.753023 0.621787 0.834792 0.078700 0.751962                      0.066500                   0.066500                    0.006445                   0.259687                              0.579480              education|education-num|age|fnlwgt|capital-gain|capital-loss|native-country|workclass
+   ProxyRank_k8_lambda2.0   gradient_boosting  0.830667           0.704203 0.572391 0.846178 0.070576 0.574873                      0.080798                   0.080798                    0.006445                   0.259687                              0.579480              education|education-num|age|fnlwgt|capital-gain|capital-loss|native-country|workclass
+    FairmRMR_k8_lambda2.0 logistic_regression  0.761333           0.748632 0.604857 0.830734 0.104986 0.727358                      0.015875                   0.015875                    0.010304                   0.383846                              0.628208             education|age|capital-gain|capital-loss|fnlwgt|workclass|native-country|hours-per-week
+    FairmRMR_k8_lambda2.0       random_forest  0.782000           0.780797 0.643402 0.859686 0.137190 0.659366                      0.062837                   0.062837                    0.010304                   0.383846                              0.628208             education|age|capital-gain|capital-loss|fnlwgt|workclass|native-country|hours-per-week
+    FairmRMR_k8_lambda2.0   gradient_boosting  0.828000           0.698926 0.562712 0.867542 0.072761 0.556464                      0.074132                   0.074132                    0.010304                   0.383846                              0.628208             education|age|capital-gain|capital-loss|fnlwgt|workclass|native-country|hours-per-week
+     FairCFS_k8_lambda2.0 logistic_regression  0.770667           0.790679 0.646817 0.882234 0.346033 0.318643                      0.145212                   0.269975                    0.023151                   0.455688                              0.733465       education|age|education-num|capital-gain|hours-per-week|fnlwgt|native-country|marital-status
+     FairCFS_k8_lambda2.0       random_forest  0.784000           0.823177 0.678571 0.894512 0.367204 0.316612                      0.095400                   0.291383                    0.023151                   0.455688                              0.733465       education|age|education-num|capital-gain|hours-per-week|fnlwgt|native-country|marital-status
+     FairCFS_k8_lambda2.0   gradient_boosting  0.840667           0.765034 0.660028 0.907884 0.192934 0.305984                      0.095502                   0.100781                    0.023151                   0.455688                              0.733465       education|age|education-num|capital-gain|hours-per-week|fnlwgt|native-country|marital-status
+   FairLasso_k8_lambda2.0 logistic_regression  0.784000           0.805712 0.665289 0.888193 0.352367 0.303477                      0.167294                   0.266660                    0.038235                   0.550579                              0.807744      native-country|occupation|education|marital-status|age|hours-per-week|education-num|workclass
+   FairLasso_k8_lambda2.0       random_forest  0.776000           0.806472 0.661972 0.891124 0.362622 0.311288                      0.131525                   0.286149                    0.038235                   0.550579                              0.807744      native-country|occupation|education|marital-status|age|hours-per-week|education-num|workclass
+   FairLasso_k8_lambda2.0   gradient_boosting  0.843333           0.767691 0.664765 0.894000 0.218482 0.233052                      0.233642                   0.233642                    0.038235                   0.550579                              0.807744      native-country|occupation|education|marital-status|age|hours-per-week|education-num|workclass
+ BasicFACMIM_k8_lambda2.0 logistic_regression  0.737333           0.720350 0.568928 0.811220 0.021134 0.941853                      0.086140                   0.086140                    0.006445                   0.259687                              0.581628              education|age|native-country|fnlwgt|capital-gain|capital-loss|education-num|workclass
+ BasicFACMIM_k8_lambda2.0       random_forest  0.783333           0.755492 0.619883 0.838965 0.079344 0.768562                      0.070367                   0.070367                    0.006445                   0.259687                              0.581628              education|age|native-country|fnlwgt|capital-gain|capital-loss|education-num|workclass
+ BasicFACMIM_k8_lambda2.0   gradient_boosting  0.830667           0.704203 0.572391 0.845851 0.070576 0.574873                      0.080798                   0.080798                    0.006445                   0.259687                              0.581628              education|age|native-country|fnlwgt|capital-gain|capital-loss|education-num|workclass
+SubsetFACMIM_k8_lambda2.0 logistic_regression  0.764667           0.744749 0.602029 0.827809 0.089379 0.756718                      0.006207                   0.006207                    0.010802                   0.251806                              0.631148      education|age|education-num|capital-gain|capital-loss|native-country|workclass|hours-per-week
+SubsetFACMIM_k8_lambda2.0       random_forest  0.781333           0.764633 0.628118 0.862166 0.118094 0.683632                      0.006055                   0.025413                    0.010802                   0.251806                              0.631148      education|age|education-num|capital-gain|capital-loss|native-country|workclass|hours-per-week
+SubsetFACMIM_k8_lambda2.0   gradient_boosting  0.832000           0.711208 0.584158 0.868510 0.076250 0.566355                      0.077999                   0.077999                    0.010802                   0.251806                              0.631148      education|age|education-num|capital-gain|capital-loss|native-country|workclass|hours-per-week

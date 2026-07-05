@@ -23,6 +23,7 @@ from sklearn.preprocessing import OneHotEncoder
 
 from src.evaluation.metrics import compute_all_metrics
 from src.selectors.cmim import CMIMSelector
+from src.selectors.fair_mrmr import FairMRMRSelector
 from src.selectors.mrmr import MRMRSelector
 from src.selectors.fa_cmim_basic import FACMIMBasicSelector
 from src.selectors.fa_cmim_subset import FACMIMSubsetAwareSelector
@@ -244,6 +245,13 @@ def make_selectors(k: int, lambdas: list[float], random_state: int = 42) -> list
             (
                 f"ProxyRank_k{k}_lambda{lam}",
                 ProxyRankSelector(k=k, fairness_penalty=lam, random_state=random_state),
+            )
+        )
+
+        selectors.append(
+            (
+                f"FairmRMR_k{k}_lambda{lam}",
+                FairMRMRSelector(k=k, fairness_penalty=lam, random_state=random_state),
             )
         )
 

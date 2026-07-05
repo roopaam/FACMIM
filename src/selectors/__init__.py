@@ -6,6 +6,12 @@ from src.selectors.fa_cmim_subset import (
     SubsetAwareConstrainedFACMIMSelector,
     SubsetAwareFACMIMSelector,
 )
+from src.selectors.fair_mrmr import (
+    FairMRMR,
+    FairMRMRBaselineSelector,
+    FairMRMRSelector,
+    FairmRMRSelector,
+)
 from src.selectors.mrmr import MRMRBaselineSelector, MRMRSelector, mRMRSelector
 from src.selectors.proxy_rank import MarginalProxyRankSelector, ProxyRankSelector
 
@@ -14,6 +20,10 @@ __all__ = [
     "MRMRSelector",
     "mRMRSelector",
     "MRMRBaselineSelector",
+    "FairMRMRSelector",
+    "FairmRMRSelector",
+    "FairMRMRBaselineSelector",
+    "FairMRMR",
     "FACMIMBasicSelector",
     "BasicFACMIMSelector",
     "FACMIMSubsetAwareSelector",

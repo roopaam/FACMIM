@@ -6,6 +6,12 @@ from src.selectors.fa_cmim_subset import (
     SubsetAwareConstrainedFACMIMSelector,
     SubsetAwareFACMIMSelector,
 )
+from src.selectors.fair_cfs import (
+    FairCFS,
+    FairCFSBaselineSelector,
+    FairCFSSelector,
+    FairCFSStyleSelector,
+)
 from src.selectors.fair_mrmr import (
     FairMRMR,
     FairMRMRBaselineSelector,
@@ -24,6 +30,10 @@ __all__ = [
     "FairmRMRSelector",
     "FairMRMRBaselineSelector",
     "FairMRMR",
+    "FairCFSStyleSelector",
+    "FairCFSSelector",
+    "FairCFSBaselineSelector",
+    "FairCFS",
     "FACMIMBasicSelector",
     "BasicFACMIMSelector",
     "FACMIMSubsetAwareSelector",

@@ -1,0 +1,41 @@
+{
+  "dataset": "COMPAS",
+  "sample_size": 5000,
+  "source": "https://raw.githubusercontent.com/propublica/compas-analysis/master/compas-scores-two-years.csv",
+  "original_rows": 7214,
+  "rows_after_filters": 6172,
+  "apply_propublica_filters": true,
+  "sensitive_col": "race",
+  "target_col": "two_year_recid",
+  "feature_columns": [
+    "age",
+    "age_cat",
+    "sex",
+    "race",
+    "juv_fel_count",
+    "juv_misd_count",
+    "juv_other_count",
+    "priors_count",
+    "c_charge_degree",
+    "c_charge_desc"
+  ],
+  "target_name": "__target__",
+  "random_state": 42,
+  "test_size": 0.3,
+  "k": 8,
+  "lambdas": [
+    0.0,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "models": [
+    "logistic_regression",
+    "random_forest",
+    "gradient_boosting"
+  ],
+  "n_train": 3500,
+  "n_test": 1500,
+  "n_result_rows": 78,
+  "output_dir": "results/compas/final"
+}

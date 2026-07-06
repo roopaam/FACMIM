@@ -1,0 +1,37 @@
+{
+  "results_path": "results/compas/final/compas_pilot_results.csv",
+  "output_dir": "results/compas/final/summary_equal_opportunity_difference",
+  "row_count": 78,
+  "columns": [
+    "dataset",
+    "selector",
+    "model",
+    "accuracy",
+    "balanced_accuracy",
+    "f1",
+    "auroc",
+    "dpd",
+    "dpr",
+    "equal_opportunity_difference",
+    "equalized_odds_difference",
+    "mean_selected_mi_sensitive",
+    "joint_subset_mi_sensitive",
+    "sensitive_attacker_balanced_accuracy",
+    "k",
+    "lambda_values",
+    "selector_runtime_seconds",
+    "n_selected_features",
+    "selected_features"
+  ],
+  "utility_col": "accuracy",
+  "fairness_col": "equal_opportunity_difference",
+  "outputs": {
+    "scored_results": "results/compas/final/summary_equal_opportunity_difference/scored_results.csv",
+    "selector_model_summary": "results/compas/final/summary_equal_opportunity_difference/selector_model_summary.csv",
+    "pareto": "results/compas/final/summary_equal_opportunity_difference/pareto_accuracy_equal_opportunity_difference.csv",
+    "best_accuracy_by_model": "results/compas/final/summary_equal_opportunity_difference/best_accuracy_by_model.csv",
+    "best_fairness_by_model": "results/compas/final/summary_equal_opportunity_difference/best_fairness_by_model.csv",
+    "best_tradeoff_by_model": "results/compas/final/summary_equal_opportunity_difference/best_tradeoff_by_model.csv",
+    "metadata": "results/compas/final/summary_equal_opportunity_difference/summary_metadata.json"
+  }
+}

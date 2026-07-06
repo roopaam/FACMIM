@@ -1,0 +1,26 @@
+\begin{table}[htbp]
+\centering
+\scriptsize
+\caption{Subset-aware FA-CMIM compared with the best fairness-aware baseline by dataset and model.}
+\label{tab:subset-vs-fairness-baselines}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llllllllll}
+\toprule
+Dataset & Model & Subset selector & Best fairness baseline & Subset Acc. & Baseline Acc. & Subset JMI & Baseline JMI & \$\textbackslash\{\}Delta\$JMI & \$\textbackslash\{\}Delta\$Acc. \\
+\midrule
+ACSIncome & GB & Subset FA-CMIM \$k=\$8 \$\textbackslash\{\}lambda=\$0.5 & FairCFS \$k=\$8 \$\textbackslash\{\}lambda=\$2.0 & 0.7933 & 0.7933 & 0.6609 & 0.6609 & -0.0000 & 0.0000 \\
+ACSIncome & LR & Subset FA-CMIM \$k=\$8 \$\textbackslash\{\}lambda=\$0.0 & fair-mRMR \$k=\$8 \$\textbackslash\{\}lambda=\$0.0 & 0.7647 & 0.7647 & 0.6609 & 0.6609 & -0.0000 & 0.0000 \\
+ACSIncome & RF & Subset FA-CMIM \$k=\$8 \$\textbackslash\{\}lambda=\$0.0 & fair-mRMR \$k=\$8 \$\textbackslash\{\}lambda=\$0.0 & 0.8047 & 0.8053 & 0.6609 & 0.6609 & -0.0000 & -0.0007 \\
+Adult & GB & Subset FA-CMIM \$k=\$8 \$\textbackslash\{\}lambda=\$1.0 & ProxyRank \$k=\$8 \$\textbackslash\{\}lambda=\$2.0 & 0.8320 & 0.8307 & 0.2518 & 0.2597 & 0.0079 & 0.0013 \\
+Adult & LR & Subset FA-CMIM \$k=\$8 \$\textbackslash\{\}lambda=\$1.0 & ProxyRank \$k=\$8 \$\textbackslash\{\}lambda=\$2.0 & 0.7647 & 0.7493 & 0.2518 & 0.2597 & 0.0079 & 0.0153 \\
+Adult & RF & Subset FA-CMIM \$k=\$8 \$\textbackslash\{\}lambda=\$1.0 & ProxyRank \$k=\$8 \$\textbackslash\{\}lambda=\$2.0 & 0.7813 & 0.7940 & 0.2518 & 0.2597 & 0.0079 & -0.0127 \\
+COMPAS & GB & Subset FA-CMIM \$k=\$8 \$\textbackslash\{\}lambda=\$2.0 & ProxyRank \$k=\$8 \$\textbackslash\{\}lambda=\$0.5 & 0.6813 & 0.6813 & 0.5445 & 0.5445 & 0.0000 & 0.0000 \\
+COMPAS & LR & Subset FA-CMIM \$k=\$8 \$\textbackslash\{\}lambda=\$2.0 & ProxyRank \$k=\$8 \$\textbackslash\{\}lambda=\$0.5 & 0.6673 & 0.6673 & 0.5445 & 0.5445 & 0.0000 & 0.0000 \\
+COMPAS & RF & Subset FA-CMIM \$k=\$8 \$\textbackslash\{\}lambda=\$2.0 & ProxyRank \$k=\$8 \$\textbackslash\{\}lambda=\$0.5 & 0.6407 & 0.6460 & 0.5445 & 0.5445 & 0.0000 & -0.0053 \\
+German Credit & GB & Subset FA-CMIM \$k=\$8 \$\textbackslash\{\}lambda=\$2.0 & fair-mRMR \$k=\$8 \$\textbackslash\{\}lambda=\$1.0 & 0.7133 & 0.7033 & 0.2463 & 0.4247 & 0.1784 & 0.0100 \\
+German Credit & LR & Subset FA-CMIM \$k=\$8 \$\textbackslash\{\}lambda=\$2.0 & fair-mRMR \$k=\$8 \$\textbackslash\{\}lambda=\$1.0 & 0.6700 & 0.7033 & 0.2463 & 0.4247 & 0.1784 & -0.0333 \\
+German Credit & RF & Subset FA-CMIM \$k=\$8 \$\textbackslash\{\}lambda=\$2.0 & ProxyRank \$k=\$8 \$\textbackslash\{\}lambda=\$2.0 & 0.6767 & 0.7067 & 0.2463 & 0.4247 & 0.1784 & -0.0300 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

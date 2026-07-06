@@ -1,0 +1,46 @@
+\begin{table}[htbp]
+\centering
+\scriptsize
+\caption{Compact selector-family summary across datasets.}
+\label{tab:selector-family-summary}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lllllll}
+\toprule
+Dataset & Selector family & Best Acc. & Lowest JMI & Lowest attacker BA & Lowest DPD & Lowest EOdds \\
+\midrule
+ACSIncome & CMIM & 0.8047 & 0.6609 & 0.5941 & 0.0268 & 0.0341 \\
+ACSIncome & mRMR & 0.8053 & 0.6609 & 0.5941 & 0.0268 & 0.0341 \\
+ACSIncome & ProxyRank & 0.8027 & 0.6609 & 0.5941 & 0.0268 & 0.0341 \\
+ACSIncome & fair-mRMR & 0.8053 & 0.6609 & 0.5941 & 0.0268 & 0.0220 \\
+ACSIncome & FairCFS-style & 0.8047 & 0.6609 & 0.5941 & 0.0268 & 0.0315 \\
+ACSIncome & FairLasso-style & 0.8040 & 0.6609 & 0.5941 & 0.0268 & 0.0306 \\
+ACSIncome & BasicFA-CMIM & 0.8047 & 0.6609 & 0.5941 & 0.0268 & 0.0315 \\
+ACSIncome & SubsetFA-CMIM & 0.8047 & 0.6609 & 0.5941 & 0.0268 & 0.0315 \\
+Adult & CMIM & 0.8427 & 0.5925 & 0.8591 & 0.2227 & 0.2590 \\
+Adult & mRMR & 0.8613 & 0.5868 & 0.8660 & 0.1773 & 0.0842 \\
+Adult & ProxyRank & 0.8433 & 0.2597 & 0.5795 & 0.0369 & 0.0194 \\
+Adult & fair-mRMR & 0.8613 & 0.3838 & 0.6282 & 0.0728 & 0.0159 \\
+Adult & FairCFS-style & 0.8653 & 0.4557 & 0.7335 & 0.1614 & 0.0727 \\
+Adult & FairLasso-style & 0.8433 & 0.5506 & 0.8077 & 0.2003 & 0.1313 \\
+Adult & BasicFA-CMIM & 0.8500 & 0.2597 & 0.5816 & 0.0211 & 0.0704 \\
+Adult & SubsetFA-CMIM & 0.8560 & 0.2518 & 0.6311 & 0.0762 & 0.0062 \\
+COMPAS & CMIM & 0.6813 & 0.5445 & 0.6532 & 0.1927 & 0.1731 \\
+COMPAS & mRMR & 0.6813 & 0.5445 & 0.6532 & 0.1849 & 0.1617 \\
+COMPAS & ProxyRank & 0.6813 & 0.5445 & 0.6532 & 0.1805 & 0.1592 \\
+COMPAS & fair-mRMR & 0.6813 & 0.5445 & 0.6532 & 0.1805 & 0.1617 \\
+COMPAS & FairCFS-style & 0.6813 & 0.5445 & 0.6532 & 0.1776 & 0.1544 \\
+COMPAS & FairLasso-style & 0.6813 & 0.5445 & 0.6532 & 0.1827 & 0.1592 \\
+COMPAS & BasicFA-CMIM & 0.6813 & 0.5445 & 0.6532 & 0.1805 & 0.1630 \\
+COMPAS & SubsetFA-CMIM & 0.6813 & 0.5445 & 0.6532 & 0.1805 & 0.1630 \\
+German Credit & CMIM & 0.7400 & 0.4865 & 0.6647 & 0.0046 & 0.0622 \\
+German Credit & mRMR & 0.7200 & 0.4458 & 0.7187 & 0.0226 & 0.0652 \\
+German Credit & ProxyRank & 0.7633 & 0.4247 & 0.5950 & 0.0011 & 0.0173 \\
+German Credit & fair-mRMR & 0.7333 & 0.4247 & 0.5950 & 0.0098 & 0.0230 \\
+German Credit & FairCFS-style & 0.7367 & 0.4414 & 0.6163 & 0.0181 & 0.0058 \\
+German Credit & FairLasso-style & 0.7467 & 0.4957 & 0.6540 & 0.0041 & 0.0945 \\
+German Credit & BasicFA-CMIM & 0.7667 & 0.4865 & 0.6177 & 0.0042 & 0.0219 \\
+German Credit & SubsetFA-CMIM & 0.7400 & 0.2463 & 0.6647 & 0.0046 & 0.0323 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\centering
+\scriptsize
+\caption{Cross-dataset support for subset-aware proxy-leakage control.}
+\label{tab:cross-dataset-claim-summary}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llllll}
+\toprule
+Dataset & Subset \$<\$ CMIM JMI & Subset \$<\$ fairness baseline JMI & Mean \$\textbackslash\{\}Delta\$JMI vs CMIM & Mean \$\textbackslash\{\}Delta\$JMI vs baseline & Interpretation \\
+\midrule
+ACSIncome & 0/3 & 0/3 & 0.0000 & -0.0000 & Flat / no clear advantage \\
+Adult & 3/3 & 3/3 & 0.3407 & 0.0079 & Strong support \\
+COMPAS & 0/3 & 0/3 & 0.0000 & 0.0000 & Flat / no clear advantage \\
+German Credit & 3/3 & 3/3 & 0.2402 & 0.1784 & Strong support \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

@@ -1,0 +1,26 @@
+\begin{table}[htbp]
+\centering
+\scriptsize
+\caption{Best selector by joint subset mutual information for each dataset and downstream model.}
+\label{tab:best-proxy-leakage}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lllllllll}
+\toprule
+Dataset & Model & Best selector by JMI & Family & Acc. & JMI & Attacker BA & DPD & EOdds \\
+\midrule
+ACSIncome & GB & FairCFS \$k=\$8 \$\textbackslash\{\}lambda=\$2.0 & FairCFS-style & 0.7933 & 0.6609 & 0.5941 & 0.0700 & 0.0315 \\
+ACSIncome & LR & mRMR \$k=\$8 & mRMR & 0.7647 & 0.6609 & 0.5941 & 0.0268 & 0.0406 \\
+ACSIncome & RF & mRMR \$k=\$8 & mRMR & 0.8053 & 0.6609 & 0.5941 & 0.0559 & 0.0636 \\
+Adult & GB & Subset FA-CMIM \$k=\$8 \$\textbackslash\{\}lambda=\$1.0 & SubsetFA-CMIM & 0.8320 & 0.2518 & 0.6311 & 0.0762 & 0.0780 \\
+Adult & LR & Subset FA-CMIM \$k=\$8 \$\textbackslash\{\}lambda=\$1.0 & SubsetFA-CMIM & 0.7647 & 0.2518 & 0.6311 & 0.0894 & 0.0062 \\
+Adult & RF & Subset FA-CMIM \$k=\$8 \$\textbackslash\{\}lambda=\$1.0 & SubsetFA-CMIM & 0.7813 & 0.2518 & 0.6311 & 0.1181 & 0.0254 \\
+COMPAS & GB & ProxyRank \$k=\$8 \$\textbackslash\{\}lambda=\$0.5 & ProxyRank & 0.6813 & 0.5445 & 0.6532 & 0.2073 & 0.2521 \\
+COMPAS & LR & ProxyRank \$k=\$8 \$\textbackslash\{\}lambda=\$0.5 & ProxyRank & 0.6673 & 0.5445 & 0.6532 & 0.2055 & 0.2307 \\
+COMPAS & RF & ProxyRank \$k=\$8 \$\textbackslash\{\}lambda=\$0.5 & ProxyRank & 0.6460 & 0.5445 & 0.6532 & 0.1848 & 0.1592 \\
+German Credit & GB & Subset FA-CMIM \$k=\$8 \$\textbackslash\{\}lambda=\$2.0 & SubsetFA-CMIM & 0.7133 & 0.2463 & 0.6903 & 0.0886 & 0.1085 \\
+German Credit & LR & Subset FA-CMIM \$k=\$8 \$\textbackslash\{\}lambda=\$2.0 & SubsetFA-CMIM & 0.6700 & 0.2463 & 0.6903 & 0.1240 & 0.0674 \\
+German Credit & RF & Subset FA-CMIM \$k=\$8 \$\textbackslash\{\}lambda=\$2.0 & SubsetFA-CMIM & 0.6767 & 0.2463 & 0.6903 & 0.1212 & 0.0712 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}

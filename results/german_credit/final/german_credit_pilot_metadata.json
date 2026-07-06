@@ -1,0 +1,49 @@
+{
+  "dataset": "German Credit",
+  "sample_size": 1000,
+  "source": "https://archive.ics.uci.edu/ml/machine-learning-databases/statlog/german/german.data",
+  "original_rows": 1000,
+  "sensitive_col": "age_group",
+  "target_col": "bad_credit",
+  "age_threshold": 25,
+  "feature_columns": [
+    "checking_status",
+    "duration",
+    "credit_history",
+    "purpose",
+    "credit_amount",
+    "savings_status",
+    "employment",
+    "installment_commitment",
+    "personal_status",
+    "other_parties",
+    "residence_since",
+    "property_magnitude",
+    "other_payment_plans",
+    "housing",
+    "existing_credits",
+    "job",
+    "num_dependents",
+    "own_telephone",
+    "foreign_worker"
+  ],
+  "target_name": "bad_credit",
+  "random_state": 42,
+  "test_size": 0.3,
+  "k": 8,
+  "lambdas": [
+    0.0,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "models": [
+    "logistic_regression",
+    "random_forest",
+    "gradient_boosting"
+  ],
+  "n_train": 700,
+  "n_test": 300,
+  "n_result_rows": 78,
+  "output_dir": "results/german_credit/final"
+}

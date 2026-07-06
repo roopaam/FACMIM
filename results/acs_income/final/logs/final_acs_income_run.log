@@ -1,0 +1,134 @@
+
+Selector: CMIM_k8
+  Model: logistic_regression
+  Model: random_forest
+  Model: gradient_boosting
+
+Selector: mRMR_k8
+  Model: logistic_regression
+  Model: random_forest
+  Model: gradient_boosting
+
+Selector: ProxyRank_k8_lambda0.0
+  Model: logistic_regression
+  Model: random_forest
+  Model: gradient_boosting
+
+Selector: FairmRMR_k8_lambda0.0
+  Model: logistic_regression
+  Model: random_forest
+  Model: gradient_boosting
+
+Selector: FairCFS_k8_lambda0.0
+  Model: logistic_regression
+  Model: random_forest
+  Model: gradient_boosting
+
+Selector: FairLasso_k8_lambda0.0
+  Model: logistic_regression
+  Model: random_forest
+  Model: gradient_boosting
+
+Selector: BasicFACMIM_k8_lambda0.0
+  Model: logistic_regression
+  Model: random_forest
+  Model: gradient_boosting
+
+Selector: SubsetFACMIM_k8_lambda0.0
+  Model: logistic_regression
+  Model: random_forest
+  Model: gradient_boosting
+
+Selector: ProxyRank_k8_lambda0.5
+  Model: logistic_regression
+  Model: random_forest
+  Model: gradient_boosting
+
+Selector: FairmRMR_k8_lambda0.5
+  Model: logistic_regression
+  Model: random_forest
+  Model: gradient_boosting
+
+Selector: FairCFS_k8_lambda0.5
+  Model: logistic_regression
+  Model: random_forest
+  Model: gradient_boosting
+
+Selector: FairLasso_k8_lambda0.5
+  Model: logistic_regression
+  Model: random_forest
+  Model: gradient_boosting
+
+Selector: BasicFACMIM_k8_lambda0.5
+  Model: logistic_regression
+  Model: random_forest
+  Model: gradient_boosting
+
+Selector: SubsetFACMIM_k8_lambda0.5
+  Model: logistic_regression
+  Model: random_forest
+  Model: gradient_boosting
+
+Selector: ProxyRank_k8_lambda1.0
+  Model: logistic_regression
+  Model: random_forest
+  Model: gradient_boosting
+
+Selector: FairmRMR_k8_lambda1.0
+  Model: logistic_regression
+  Model: random_forest
+  Model: gradient_boosting
+
+Selector: FairCFS_k8_lambda1.0
+  Model: logistic_regression
+  Model: random_forest
+  Model: gradient_boosting
+
+Selector: FairLasso_k8_lambda1.0
+  Model: logistic_regression
+  Model: random_forest
+  Model: gradient_boosting
+
+Selector: BasicFACMIM_k8_lambda1.0
+  Model: logistic_regression
+  Model: random_forest
+  Model: gradient_boosting
+
+Selector: SubsetFACMIM_k8_lambda1.0
+  Model: logistic_regression
+  Model: random_forest
+  Model: gradient_boosting
+
+Selector: ProxyRank_k8_lambda2.0
+  Model: logistic_regression
+  Model: random_forest
+  Model: gradient_boosting
+
+Selector: FairmRMR_k8_lambda2.0
+  Model: logistic_regression
+  Model: random_forest
+  Model: gradient_boosting
+
+Selector: FairCFS_k8_lambda2.0
+  Model: logistic_regression
+  Model: random_forest
+  Model: gradient_boosting
+
+Selector: FairLasso_k8_lambda2.0
+  Model: logistic_regression
+  Model: random_forest
+  Model: gradient_boosting
+
+Selector: BasicFACMIM_k8_lambda2.0
+  Model: logistic_regression
+  Model: random_forest
+  Model: gradient_boosting
+
+Selector: SubsetFACMIM_k8_lambda2.0
+  Model: logistic_regression
+  Model: random_forest
+  Model: gradient_boosting
+
+Saved results to: results/acs_income/final/acs_income_pilot_results.csv
+Saved metadata to: results/acs_income/final/acs_income_pilot_metadata.json
+Rows: 78

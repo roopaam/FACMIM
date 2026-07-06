@@ -1,0 +1,5 @@
+Dataset,Subset beats CMIM,Subset beats fairness baseline,Mean joint-MI advantage vs CMIM,Mean joint-MI advantage vs fairness baseline,Interpretation
+ACSIncome,0/3,0/3,0.0000,-0.0000,flat or no clear advantage
+Adult,3/3,3/3,0.3407,0.0079,strong support
+COMPAS,0/3,0/3,0.0000,0.0000,flat or no clear advantage
+German Credit,3/3,3/3,0.2402,0.1784,strong support

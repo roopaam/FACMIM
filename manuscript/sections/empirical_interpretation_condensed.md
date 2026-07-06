@@ -1,0 +1,7 @@
+# Condensed Empirical Interpretation
+
+The empirical results show that fairness-aware feature selection does not necessarily eliminate proxy leakage. Across the evaluated datasets, several fairness-aware baselines remain competitive on predictive accuracy and downstream group fairness, but their selected feature subsets can still retain sensitive information as measured by joint subset mutual information and sensitive-attribute attacker balanced accuracy.
+
+Subset-aware FA-CMIM is designed to address this limitation by penalizing leakage at the selected-subset level. The strongest evidence appears on datasets where the feature-selection problem provides meaningful room to trade off predictive utility against proxy leakage. In the current experiments, Subset-aware FA-CMIM shows strong proxy-leakage advantage on 2 dataset(s), partial advantage on 0 dataset(s), and flat or no clear advantage on 2 dataset(s). The flatter results are mainly observed in settings where k is large relative to the effective feature space, causing different selectors to converge to highly overlapping feature subsets.
+
+Overall, the results support the central claim that proxy mitigation requires direct subset-level leakage diagnostics. The proposed method should therefore be interpreted not as a universal accuracy-maximizing selector, but as a proxy-leakage-aware selection mechanism that exposes and controls the fairness--utility--leakage trade-off.

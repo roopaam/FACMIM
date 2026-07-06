@@ -3,8 +3,9 @@
   "sample_size": 5000,
   "source": "https://raw.githubusercontent.com/propublica/compas-analysis/master/compas-scores-two-years.csv",
   "original_rows": 7214,
-  "rows_after_filters": 6172,
+  "rows_after_filters": 5278,
   "apply_propublica_filters": true,
+  "binary_race": true,
   "sensitive_col": "race",
   "target_col": "two_year_recid",
   "feature_columns": [

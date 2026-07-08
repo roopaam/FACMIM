@@ -1,0 +1,38 @@
+{
+  "dataset": "ACSIncome",
+  "sample_size": 5000,
+  "state": "CA",
+  "survey_year": "2018",
+  "sensitive_col": "sex",
+  "feature_columns": [
+    "age",
+    "class-worker",
+    "education",
+    "marital-status",
+    "occupation",
+    "birthplace",
+    "relationship",
+    "hours-per-week",
+    "sex",
+    "race"
+  ],
+  "target_name": "__target__",
+  "random_state": 42,
+  "test_size": 0.3,
+  "k": 5,
+  "lambdas": [
+    0.0,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "models": [
+    "logistic_regression",
+    "random_forest",
+    "gradient_boosting"
+  ],
+  "n_train": 3500,
+  "n_test": 1500,
+  "n_result_rows": 78,
+  "output_dir": "results/acs_income/final_k5"
+}

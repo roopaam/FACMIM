@@ -1,0 +1,61 @@
+Metadata: {'dataset': 'adult', 'target_col': 'class', 'sensitive_col': 'sex', 'positive_target': '>50K', 'positive_sensitive': 'Male'}
+Removed entangled proxies: ['relationship', 'marital-status']
+Saved diagnostics: results/proxy_entanglement/adult_ablation_all_methods/adult_entangled_proxy_diagnostics.csv
+Saved full results: results/proxy_entanglement/adult_ablation_all_methods/adult_all_methods_proxy_removal_ablation_results.csv
+Saved summary: results/proxy_entanglement/adult_ablation_all_methods/adult_all_methods_proxy_removal_ablation_summary.csv
+Saved delta: results/proxy_entanglement/adult_ablation_all_methods/adult_all_methods_proxy_removal_ablation_delta.csv
+Saved best leakage table: results/proxy_entanglement/adult_ablation_all_methods/adult_all_methods_best_leakage_by_variant.csv
+
+Top entangled proxies:
+       feature  mi_feature_sensitive  mi_feature_target  cmi_feature_target_given_sensitive  entanglement_score  selection_count  selection_frequency
+  relationship              0.399592           0.174783                            0.139723            0.055832                0                  0.0
+marital-status              0.161170           0.167292                            0.133903            0.021581                0                  0.0
+    occupation              0.137095           0.086036                            0.093698            0.012846                0                  0.0
+hours-per-week              0.045894           0.051792                            0.038187            0.001753                0                  0.0
+           age              0.008890           0.093757                            0.088310            0.000785                0                  0.0
+     education              0.005946           0.083770                            0.086557            0.000515                0                  0.0
+     workclass              0.014724           0.023219                            0.021802            0.000321                0                  0.0
+native-country              0.009007           0.013962                            0.019910            0.000179                0                  0.0
+ education-num              0.001085           0.068150                            0.070876            0.000077                0                  0.0
+          race              0.008085           0.004765                            0.004703            0.000038                0                  0.0
+
+Best leakage by variant:
+dataset                  variant               selector  best_accuracy  mean_accuracy  mean_balanced_accuracy  mean_joint_mi  min_joint_mi  mean_attacker_ba  min_attacker_ba  mean_dpd  mean_eod  mean_eodds
+  adult                 original SubsetFACMIM_lambda2.0       0.826000       0.807778                0.666654       0.551602      0.551602          0.510812         0.510812  0.055081  0.071095    0.071095
+  adult                 original SubsetFACMIM_lambda1.0       0.836667       0.830222                0.730614       0.616741      0.616741          0.632015         0.632015  0.159150  0.089647    0.094902
+  adult                 original  BasicFACMIM_lambda2.0       0.824667       0.805333                0.657698       0.643410      0.643410          0.509792         0.509792  0.047383  0.060261    0.060261
+  adult                 original      FairCFS_lambda2.0       0.812000       0.802667                0.659143       0.711563      0.711563          0.510824         0.510824  0.051085  0.108077    0.110103
+  adult                 original    ProxyRank_lambda2.0       0.823333       0.810889                0.663584       0.716417      0.716417          0.503942         0.503942  0.044707  0.059088    0.059088
+  adult                 original  BasicFACMIM_lambda1.0       0.823333       0.812000                0.662076       0.742290      0.742290          0.511802         0.511802  0.049339  0.051195    0.051195
+  adult                 original      FairCFS_lambda0.5       0.836667       0.829556                0.734331       0.755219      0.755219          0.669846         0.669846  0.179814  0.198425    0.198425
+  adult                 original    ProxyRank_lambda1.0       0.836667       0.829111                0.733400       0.755219      0.755219          0.669846         0.669846  0.180144  0.202415    0.202415
+  adult                 original SubsetFACMIM_lambda0.5       0.820667       0.812444                0.710948       0.785750      0.785750          0.741571         0.741571  0.182144  0.236650    0.236650
+  adult                 original     FairmRMR_lambda0.5       0.838667       0.832222                0.736082       0.792671      0.792671          0.642500         0.642500  0.175806  0.179627    0.179627
+  adult remove_entangled_proxies SubsetFACMIM_lambda0.5       0.826000       0.808667                0.667877       0.551602      0.551602          0.510812         0.510812  0.055081  0.067104    0.067104
+  adult remove_entangled_proxies SubsetFACMIM_lambda1.0       0.826000       0.807111                0.665897       0.551602      0.551602          0.510812         0.510812  0.054417  0.069957    0.069957
+  adult remove_entangled_proxies SubsetFACMIM_lambda2.0       0.826000       0.807778                0.666654       0.551602      0.551602          0.510812         0.510812  0.055081  0.071095    0.071095
+  adult remove_entangled_proxies  BasicFACMIM_lambda2.0       0.824667       0.805333                0.657698       0.643410      0.643410          0.509792         0.509792  0.047383  0.060261    0.060261
+  adult remove_entangled_proxies    ProxyRank_lambda1.0       0.825333       0.812000                0.685088       0.666976      0.666976          0.549054         0.549054  0.072485  0.051650    0.051650
+  adult remove_entangled_proxies      FairCFS_lambda2.0       0.812000       0.802667                0.659143       0.711563      0.711563          0.510824         0.510824  0.051085  0.108077    0.110103
+  adult remove_entangled_proxies    ProxyRank_lambda2.0       0.823333       0.810889                0.663584       0.716417      0.716417          0.503942         0.503942  0.044707  0.059088    0.059088
+  adult remove_entangled_proxies  BasicFACMIM_lambda1.0       0.823333       0.812000                0.662076       0.742290      0.742290          0.511802         0.511802  0.049339  0.051195    0.051195
+  adult remove_entangled_proxies    FairLasso_lambda0.5       0.785333       0.774222                0.638545       0.795643      0.795643          0.661466         0.661466  0.061885  0.143467    0.143467
+  adult remove_entangled_proxies    FairLasso_lambda0.0       0.785333       0.773111                0.637176       0.795643      0.795643          0.661466         0.661466  0.065213  0.147458    0.147458
+
+Largest leakage drops after proxy removal:
+dataset               selector  mean_accuracy_original  mean_accuracy_removed  accuracy_change_after_proxy_removal  mean_joint_mi_original  mean_joint_mi_removed  joint_mi_drop_after_proxy_removal  mean_attacker_ba_original  mean_attacker_ba_removed  attacker_ba_drop_after_proxy_removal
+  adult SubsetFACMIM_lambda0.5                0.812444               0.808667                            -0.003778                0.785750               0.551602                           0.234148                   0.741571                  0.510812                              0.230758
+  adult    ProxyRank_lambda1.0                0.829111               0.812000                            -0.017111                0.755219               0.666976                           0.088243                   0.669846                  0.549054                              0.120791
+  adult SubsetFACMIM_lambda1.0                0.830222               0.807111                            -0.023111                0.616741               0.551602                           0.065139                   0.632015                  0.510812                              0.121203
+  adult    FairLasso_lambda0.0                0.818000               0.773111                            -0.044889                0.854524               0.795643                           0.058882                   0.818837                  0.661466                              0.157371
+  adult  BasicFACMIM_lambda0.0                0.839556               0.798222                            -0.041333                0.898944               0.854834                           0.044110                   0.839210                  0.661961                              0.177249
+  adult                   CMIM                0.839556               0.798222                            -0.041333                0.898944               0.854834                           0.044110                   0.839210                  0.661961                              0.177249
+  adult SubsetFACMIM_lambda0.0                0.839556               0.798222                            -0.041333                0.898944               0.854834                           0.044110                   0.839210                  0.661961                              0.177249
+  adult    FairLasso_lambda0.5                0.815333               0.774222                            -0.041111                0.835669               0.795643                           0.040026                   0.822278                  0.661466                              0.160812
+  adult    ProxyRank_lambda0.5                0.837333               0.800667                            -0.036667                0.882458               0.849827                           0.032630                   0.748555                  0.662462                              0.086093
+  adult  BasicFACMIM_lambda0.5                0.836444               0.808000                            -0.028444                0.892034               0.860670                           0.031364                   0.748567                  0.659963                              0.088604
+  adult    ProxyRank_lambda0.0                0.825111               0.799111                            -0.026000                0.875940               0.849827                           0.026112                   0.826280                  0.662462                              0.163818
+  adult     FairmRMR_lambda0.0                0.828444               0.804889                            -0.023556                0.907120               0.887120                           0.020000                   0.824318                  0.662462                              0.161856
+  adult                   mRMR                0.828444               0.804889                            -0.023556                0.907120               0.887120                           0.020000                   0.824318                  0.662462                              0.161856
+  adult      FairCFS_lambda0.0                0.838667               0.805556                            -0.033111                0.900277               0.889787                           0.010490                   0.820817                  0.659957                              0.160860
+  adult SubsetFACMIM_lambda2.0                0.807778               0.807778                             0.000000                0.551602               0.551602                           0.000000                   0.510812                  0.510812                              0.000000

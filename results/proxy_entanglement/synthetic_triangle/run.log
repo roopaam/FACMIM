@@ -1,0 +1,47 @@
+Running scenario: triangle_entangled
+  seed=1
+  seed=2
+  seed=3
+  seed=4
+  seed=5
+Running scenario: target_only_no_proxy
+  seed=1
+  seed=2
+  seed=3
+  seed=4
+  seed=5
+Running scenario: sensitive_only_not_target
+  seed=1
+  seed=2
+  seed=3
+  seed=4
+  seed=5
+Running scenario: weak_joint_entangled
+  seed=1
+  seed=2
+  seed=3
+  seed=4
+  seed=5
+
+Saved results: results/proxy_entanglement/synthetic_triangle/synthetic_triangle_validation_results.csv
+Saved diagnostics: results/proxy_entanglement/synthetic_triangle/synthetic_triangle_entanglement_diagnostics.csv
+Saved summary: results/proxy_entanglement/synthetic_triangle/synthetic_triangle_validation_summary.csv
+Saved LaTeX summary: results/proxy_entanglement/synthetic_triangle/synthetic_triangle_validation_summary.tex
+
+                 scenario               selector  mean_accuracy  std_accuracy  mean_joint_mi  std_joint_mi  mean_attacker_ba  std_attacker_ba  mean_dpd  mean_eod  mean_eodds
+sensitive_only_not_target                   CMIM       0.769956      0.009938       0.437088      0.249394          0.802258         0.167856  0.037130  0.026120    0.050316
+sensitive_only_not_target SubsetFACMIM_lambda0.5       0.770000      0.008754       0.017488      0.004093          0.491246         0.006186  0.035476  0.022565    0.048681
+sensitive_only_not_target SubsetFACMIM_lambda1.0       0.769689      0.009189       0.014707      0.002876          0.495649         0.009316  0.035748  0.023464    0.049887
+sensitive_only_not_target SubsetFACMIM_lambda2.0       0.770089      0.008862       0.015323      0.004517          0.494840         0.007685  0.035476  0.022985    0.049407
+     target_only_no_proxy                   CMIM       0.770222      0.009922       0.018459      0.006895          0.489002         0.016196  0.035598  0.023282    0.049248
+     target_only_no_proxy SubsetFACMIM_lambda0.5       0.770222      0.009557       0.017229      0.003467          0.488409         0.013058  0.036232  0.023880    0.049939
+     target_only_no_proxy SubsetFACMIM_lambda1.0       0.769867      0.009012       0.015103      0.003278          0.489947         0.013091  0.036076  0.023807    0.050230
+     target_only_no_proxy SubsetFACMIM_lambda2.0       0.769867      0.009012       0.014898      0.003484          0.491949         0.014096  0.036076  0.023807    0.050230
+       triangle_entangled                   CMIM       0.695067      0.010100       0.504255      0.019487          0.846921         0.009366  0.383354  0.277095    0.420912
+       triangle_entangled SubsetFACMIM_lambda0.5       0.616667      0.005583       0.015655      0.002820          0.492890         0.012059  0.018716  0.028761    0.054867
+       triangle_entangled SubsetFACMIM_lambda1.0       0.617600      0.006760       0.014760      0.002516          0.492973         0.012017  0.018244  0.031591    0.056564
+       triangle_entangled SubsetFACMIM_lambda2.0       0.617600      0.006760       0.014760      0.002516          0.492973         0.012017  0.018244  0.031591    0.056564
+     weak_joint_entangled                   CMIM       0.646933      0.012719       0.332694      0.011043          0.790577         0.008378  0.424528  0.344131    0.446069
+     weak_joint_entangled SubsetFACMIM_lambda0.5       0.589378      0.012882       0.015332      0.005480          0.495857         0.012484  0.021606  0.025606    0.038667
+     weak_joint_entangled SubsetFACMIM_lambda1.0       0.588089      0.012731       0.016674      0.007374          0.499331         0.013498  0.021264  0.028732    0.039931
+     weak_joint_entangled SubsetFACMIM_lambda2.0       0.586889      0.015088       0.017119      0.006276          0.492140         0.009816  0.018972  0.030229    0.048360

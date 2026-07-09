@@ -242,26 +242,56 @@ def load_fairness_dataset(
 # Entangled proxy diagnostics
 # ---------------------------------------------------------------------
 
+
 def parse_selected_features(value) -> List[str]:
+    """
+    Robust parser for selected feature strings.
+
+    Supports:
+    - Python list strings: "['age', 'education']"
+    - Pipe-separated strings: "age|education|occupation"
+    - Comma-separated strings: "age, education, occupation"
+    - Semicolon-separated strings
+    """
     if value is None or (isinstance(value, float) and np.isnan(value)):
         return []
 
     if isinstance(value, list):
-        return [str(v) for v in value]
+        return [str(v).strip() for v in value if str(v).strip()]
 
-    text = str(value).strip()
+    text_value = str(value).strip()
 
+    if not text_value or text_value.lower() in {"nan", "none", "[]"}:
+        return []
+
+    # Try Python literal list first.
     try:
-        parsed = ast.literal_eval(text)
+        parsed = ast.literal_eval(text_value)
         if isinstance(parsed, list):
-            return [str(v) for v in parsed]
+            return [str(v).strip().strip("'\"") for v in parsed if str(v).strip()]
     except Exception:
         pass
 
-    if "," in text:
-        return [v.strip().strip("'\"") for v in text.split(",") if v.strip()]
+    # Remove enclosing brackets if present.
+    text_value = text_value.strip("[]")
 
-    return [text.strip("'\"")] if text else []
+    # Most result files use pipe-separated features.
+    if "|" in text_value:
+        parts = text_value.split("|")
+    elif ";" in text_value:
+        parts = text_value.split(";")
+    elif "," in text_value:
+        parts = text_value.split(",")
+    else:
+        parts = [text_value]
+
+    cleaned = []
+    for p in parts:
+        f = str(p).strip().strip("'\"")
+        if f and f.lower() not in {"nan", "none"}:
+            cleaned.append(f)
+
+    return cleaned
 
 
 def selection_frequencies_from_results(results_path: Optional[str]) -> pd.DataFrame:

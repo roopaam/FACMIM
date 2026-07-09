@@ -1,0 +1,61 @@
+Metadata: {'dataset': 'german_credit', 'target_col': 'class', 'sensitive_col': 'derived_sex', 'sensitive_source_col': 'personal_status', 'positive_target': 'bad_credit_risk', 'positive_sensitive': 'male'}
+Removed entangled proxies: ['age', 'employment', 'purpose', 'credit_history', 'housing']
+Saved diagnostics: results/proxy_entanglement/german_credit_ablation_all_methods_top5/german_credit_entangled_proxy_diagnostics.csv
+Saved full results: results/proxy_entanglement/german_credit_ablation_all_methods_top5/german_credit_all_methods_proxy_removal_ablation_results.csv
+Saved summary: results/proxy_entanglement/german_credit_ablation_all_methods_top5/german_credit_all_methods_proxy_removal_ablation_summary.csv
+Saved delta: results/proxy_entanglement/german_credit_ablation_all_methods_top5/german_credit_all_methods_proxy_removal_ablation_delta.csv
+Saved best leakage table: results/proxy_entanglement/german_credit_ablation_all_methods_top5/german_credit_all_methods_best_leakage_by_variant.csv
+
+Top entangled proxies:
+               feature  mi_feature_sensitive  mi_feature_target  cmi_feature_target_given_sensitive  entanglement_score  selection_count  selection_frequency
+                   age              0.054369           0.011779                            0.014882            0.000809                0                  0.0
+            employment              0.035575           0.013102                            0.014864            0.000529                0                  0.0
+               purpose              0.016614           0.024894                            0.029551            0.000491                0                  0.0
+        credit_history              0.010200           0.043618                            0.046143            0.000471                0                  0.0
+               housing              0.037274           0.012753                            0.012531            0.000467                0                  0.0
+              duration              0.006143           0.032296                            0.037734            0.000232                0                  0.0
+         credit_amount              0.011701           0.014436                            0.016808            0.000197                0                  0.0
+    property_magnitude              0.006214           0.016985                            0.020357            0.000126                0                  0.0
+        savings_status              0.003243           0.028115                            0.032155            0.000104                0                  0.0
+installment_commitment              0.011841           0.003972                            0.007964            0.000094                0                  0.0
+
+Best leakage by variant:
+      dataset                  variant               selector  best_accuracy  mean_accuracy  mean_balanced_accuracy  mean_joint_mi  min_joint_mi  mean_attacker_ba  min_attacker_ba  mean_dpd  mean_eod  mean_eodds
+german_credit                 original SubsetFACMIM_lambda2.0       0.686667       0.678889                0.562169       0.371222      0.371222          0.512264         0.512264  0.052789  0.068398    0.072222
+german_credit                 original SubsetFACMIM_lambda1.0       0.713333       0.702222                0.601058       0.416763      0.416763          0.598264         0.598264  0.036718  0.053680    0.064340
+german_credit                 original SubsetFACMIM_lambda0.5       0.760000       0.736667                0.644709       0.524854      0.524854          0.500000         0.500000  0.029272  0.065801    0.074910
+german_credit                 original      FairCFS_lambda1.0       0.750000       0.737778                0.655026       0.703646      0.703646          0.497413         0.497413  0.032473  0.080519    0.080519
+german_credit                 original      FairCFS_lambda0.5       0.750000       0.734444                0.651587       0.703646      0.703646          0.497413         0.497413  0.025822  0.086580    0.086580
+german_credit                 original     FairmRMR_lambda0.5       0.750000       0.738889                0.655820       0.703646      0.703646          0.497413         0.497413  0.024197  0.080519    0.080519
+german_credit                 original     FairmRMR_lambda2.0       0.750000       0.744444                0.661905       0.703646      0.703646          0.497413         0.497413  0.030847  0.099567    0.099567
+german_credit                 original    ProxyRank_lambda1.0       0.750000       0.742222                0.659259       0.703646      0.703646          0.497413         0.497413  0.025872  0.074459    0.074459
+german_credit                 original    ProxyRank_lambda2.0       0.750000       0.741111                0.660582       0.703646      0.703646          0.497413         0.497413  0.032423  0.093506    0.093506
+german_credit                 original      FairCFS_lambda2.0       0.750000       0.741111                0.660582       0.703646      0.703646          0.497413         0.497413  0.032423  0.093506    0.093506
+german_credit remove_entangled_proxies SubsetFACMIM_lambda2.0       0.686667       0.678889                0.562169       0.371222      0.371222          0.512264         0.512264  0.052789  0.068398    0.072222
+german_credit remove_entangled_proxies SubsetFACMIM_lambda1.0       0.720000       0.701111                0.583333       0.453008      0.453008          0.509752         0.509752  0.053187  0.051948    0.072228
+german_credit remove_entangled_proxies SubsetFACMIM_lambda0.5       0.716667       0.712222                0.613492       0.576863      0.576863          0.509901         0.509901  0.050699  0.085714    0.086869
+german_credit remove_entangled_proxies    FairLasso_lambda0.0       0.713333       0.708889                0.614286       0.607464      0.607464          0.504950         0.504950  0.064613  0.135065    0.164244
+german_credit remove_entangled_proxies    FairLasso_lambda0.5       0.713333       0.708889                0.614286       0.607464      0.607464          0.504950         0.504950  0.064613  0.135065    0.164244
+german_credit remove_entangled_proxies    FairLasso_lambda1.0       0.713333       0.708889                0.614286       0.607464      0.607464          0.504950         0.504950  0.064613  0.135065    0.164244
+german_credit remove_entangled_proxies    FairLasso_lambda2.0       0.713333       0.708889                0.614286       0.607464      0.607464          0.504950         0.504950  0.064613  0.135065    0.164244
+german_credit remove_entangled_proxies     FairmRMR_lambda2.0       0.726667       0.715556                0.624339       0.705280      0.705280          0.509901         0.509901  0.040135  0.087446    0.087446
+german_credit remove_entangled_proxies  BasicFACMIM_lambda2.0       0.726667       0.714444                0.623545       0.705280      0.705280          0.509901         0.509901  0.035773  0.087446    0.091348
+german_credit remove_entangled_proxies      FairCFS_lambda2.0       0.720000       0.712222                0.619841       0.705280      0.705280          0.509901         0.509901  0.036834  0.090909    0.090909
+
+Largest leakage drops after proxy removal:
+      dataset               selector  mean_accuracy_original  mean_accuracy_removed  accuracy_change_after_proxy_removal  mean_joint_mi_original  mean_joint_mi_removed  joint_mi_drop_after_proxy_removal  mean_attacker_ba_original  mean_attacker_ba_removed  attacker_ba_drop_after_proxy_removal
+german_credit    FairLasso_lambda0.0                0.715556               0.708889                            -0.006667                0.840378               0.607464                           0.232914                   0.558660                  0.504950                              0.053709
+german_credit    FairLasso_lambda0.5                0.715556               0.708889                            -0.006667                0.840378               0.607464                           0.232914                   0.558660                  0.504950                              0.053709
+german_credit    FairLasso_lambda1.0                0.715556               0.708889                            -0.006667                0.840378               0.607464                           0.232914                   0.558660                  0.504950                              0.053709
+german_credit    FairLasso_lambda2.0                0.721111               0.708889                            -0.012222                0.840378               0.607464                           0.232914                   0.558660                  0.504950                              0.053709
+german_credit      FairCFS_lambda0.0                0.726667               0.708889                            -0.017778                0.837862               0.754926                           0.082935                   0.536345                  0.499925                              0.036420
+german_credit    ProxyRank_lambda0.5                0.750000               0.725556                            -0.024444                0.849894               0.774926                           0.074967                   0.507165                  0.504876                              0.002289
+german_credit    ProxyRank_lambda0.0                0.742222               0.733333                            -0.008889                0.888260               0.828260                           0.060000                   0.526593                  0.504876                              0.021717
+german_credit     FairmRMR_lambda0.0                0.733333               0.710000                            -0.023333                0.793711               0.742894                           0.050817                   0.576248                  0.509677                              0.066570
+german_credit                   mRMR                0.733333               0.710000                            -0.023333                0.793711               0.742894                           0.050817                   0.576248                  0.509677                              0.066570
+german_credit  BasicFACMIM_lambda0.5                0.762222               0.718889                            -0.043333                0.901593               0.881593                           0.020000                   0.497264                  0.504727                             -0.007463
+german_credit  BasicFACMIM_lambda0.0                0.741111               0.718889                            -0.022222                0.888260               0.881593                           0.006667                   0.526593                  0.504727                              0.021867
+german_credit                   CMIM                0.741111               0.718889                            -0.022222                0.888260               0.881593                           0.006667                   0.526593                  0.504727                              0.021867
+german_credit SubsetFACMIM_lambda0.0                0.741111               0.718889                            -0.022222                0.888260               0.881593                           0.006667                   0.526593                  0.504727                              0.021867
+german_credit  BasicFACMIM_lambda1.0                0.750000               0.722222                            -0.027778                0.863227               0.859077                           0.004150                   0.497264                  0.504727                             -0.007463
+german_credit SubsetFACMIM_lambda2.0                0.678889               0.678889                             0.000000                0.371222               0.371222                           0.000000                   0.512264                  0.512264                              0.000000

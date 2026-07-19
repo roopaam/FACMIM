@@ -1,0 +1,30 @@
+{
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "k": 8,
+  "lambdas": [
+    0.0,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "models": [
+    "logistic_regression",
+    "random_forest",
+    "gradient_boosting"
+  ],
+  "adult_sample_size": 5000,
+  "german_sample_size": 1000,
+  "output_dir": "results/seed_robustness",
+  "test_size": 0.3,
+  "german_data_path": null,
+  "german_download_url": "https://archive.ics.uci.edu/ml/machine-learning-databases/statlog/german/german.data",
+  "german_age_threshold": 25,
+  "adult_synthetic_smoke": false,
+  "german_synthetic_smoke": false
+}

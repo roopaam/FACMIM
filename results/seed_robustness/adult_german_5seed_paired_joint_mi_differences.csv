@@ -1,0 +1,13 @@
+dataset,model,comparison,n_seeds,mean_delta_joint_mi,std_delta_joint_mi,wilcoxon_p_value_one_sided,note
+Adult,gradient_boosting,CMIM - Subset-aware FA-CMIM lambda=1,5,0.33768929277153825,0.010627660974152405,0.03125,Positive delta means lower leakage for Subset-aware FA-CMIM.
+Adult,gradient_boosting,CMIM - Subset-aware FA-CMIM lambda=2,5,0.33583788072896137,0.013458280899303688,0.03125,Positive delta means lower leakage for Subset-aware FA-CMIM.
+Adult,logistic_regression,CMIM - Subset-aware FA-CMIM lambda=1,5,0.33768929277153825,0.010627660974152405,0.03125,Positive delta means lower leakage for Subset-aware FA-CMIM.
+Adult,logistic_regression,CMIM - Subset-aware FA-CMIM lambda=2,5,0.33583788072896137,0.013458280899303688,0.03125,Positive delta means lower leakage for Subset-aware FA-CMIM.
+Adult,random_forest,CMIM - Subset-aware FA-CMIM lambda=1,5,0.33768929277153825,0.010627660974152405,0.03125,Positive delta means lower leakage for Subset-aware FA-CMIM.
+Adult,random_forest,CMIM - Subset-aware FA-CMIM lambda=2,5,0.33583788072896137,0.013458280899303688,0.03125,Positive delta means lower leakage for Subset-aware FA-CMIM.
+German Credit,gradient_boosting,CMIM - Subset-aware FA-CMIM lambda=1,5,0.19019789317436914,0.020963988094652115,0.03125,Positive delta means lower leakage for Subset-aware FA-CMIM.
+German Credit,gradient_boosting,CMIM - Subset-aware FA-CMIM lambda=2,5,0.19558155674219352,0.0398783660012509,0.03125,Positive delta means lower leakage for Subset-aware FA-CMIM.
+German Credit,logistic_regression,CMIM - Subset-aware FA-CMIM lambda=1,5,0.19019789317436914,0.020963988094652115,0.03125,Positive delta means lower leakage for Subset-aware FA-CMIM.
+German Credit,logistic_regression,CMIM - Subset-aware FA-CMIM lambda=2,5,0.19558155674219352,0.0398783660012509,0.03125,Positive delta means lower leakage for Subset-aware FA-CMIM.
+German Credit,random_forest,CMIM - Subset-aware FA-CMIM lambda=1,5,0.19019789317436914,0.020963988094652115,0.03125,Positive delta means lower leakage for Subset-aware FA-CMIM.
+German Credit,random_forest,CMIM - Subset-aware FA-CMIM lambda=2,5,0.19558155674219352,0.0398783660012509,0.03125,Positive delta means lower leakage for Subset-aware FA-CMIM.
